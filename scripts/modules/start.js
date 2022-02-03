@@ -27,7 +27,7 @@ const createFirstForm = (data) => {
 
   const labelTour = createElement('label', {
     className: 'field__label',
-    for: 'tour',
+    htmlFor: 'tour',
     textContent: 'Выбрать тур',
   });
 
@@ -45,6 +45,7 @@ const createFirstForm = (data) => {
   select.append(...options);
 
   const label = createElement('label', {
+    htmlFor: 'count',
     className: 'field__label',
     textContent: 'Укажите количество человек (max: 6)',
   });
